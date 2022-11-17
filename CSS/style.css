@@ -64,3 +64,8 @@ footer{
 h5, a {
     font-size: 20px;
 }
+
+.bomb{
+    color: #fff;
+    background-color: #F23607;
+  }

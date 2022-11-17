@@ -8,6 +8,7 @@ const contenitore = document.getElementById("container");
 
 console.log(contenitore);
 
+
 // creare bottone
 const button = document.getElementById("button");
 
@@ -18,7 +19,6 @@ button.addEventListener ("click",
         console.clear();
         for (let i = 1; i <= 100; i++ ){
             let myElement = createSquare(i);
-            
             myElement.addEventListener("click",
                 function() {
                     this.classList.add("clicked");
@@ -39,4 +39,11 @@ function createSquare (i){
     return element;
 
 }
+
+
+function numRandom (min, max){
+    return (Math.floor(Math.random() * ((max + 1) - min) + min));
+}
+
+
 
