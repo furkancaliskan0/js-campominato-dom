@@ -1,71 +1,91 @@
 *{
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: sans-serif;
 }
 
 header{
-    padding: 20px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#logo {
-    display: flex;
-    align-items: center;
-}
-
-header h1 {
-    font-size: 40px;
-    margin-left: 10px;
-}
-
-button{
-    padding:  2px 20px;
+    justify-content: space-evenly;
+    height: 10vh;
+    width: 100%;
 }
 
 main{
-    background-color: aquamarine;
-}
-#container {
-    width: 65%;
-    margin: 0 auto;
     display: flex;
-    flex-wrap: wrap;
-    padding: 50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 100%;
+    background-color: aquamarine;
+    padding-top: 30px;
 }
 
-.box {
-    width: calc(10% - 10px);
+#logo{
+    font-size: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+#container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    height: 500px;
+}
+
+.checked{
+    background-color: rgb(14, 153, 245);
+    color: white;
+}
+
+.checked-bombs{
+    background-color: rgb(201, 20, 20);
+    color: white;
+}
+
+.box-facile{
+    height: calc(100% / 10);
+    width: calc(100% / 10);;
     display: flex;
     justify-content: center;
     align-items: center;
     border: 1px solid black;
-    height: 80px;
-    cursor: pointer;
-    background-color: aquamarine;
+    
+}
+.box-medio{
+    height: calc(100% / 9);
+    width: calc(100% / 9);;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    
 }
 
-.box.clicked{
-    background-color: white;
+.box-difficile{
+    height: calc(100% / 7);
+    width: calc(100% / 7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    
 }
 
 footer{
     background-color: white;
-    width: calc(100% - 40px);
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 30px;
-    padding: 20px;
+    justify-content: center;
+    height: 10vh;
+    width: 100%;
 }
 
-h5, a {
-    font-size: 20px;
-}
 
-.bomb{
-    color: #fff;
-    background-color: #F23607;
-  }
